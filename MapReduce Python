@@ -11,7 +11,7 @@ sudo su - hadoop
 start-all.sh
 
 # Copy the file from aws s3 bucket and download it in hadoop
-aws s3 cp s3://booksassg/Assg/amazon_reviews_us_Camera_v1_00.tsv /home/hadoop/amazon_reviews_us_Camera_v1_00.tsv
+aws s3 cp s3://camassg/amazon_reviews_us_Camera_v1_00.tsv /home/hadoop/amazon_reviews_us_Camera_v1_00.tsv
 
 # Put the file into Hadoop
 hdfs dfs -put /home/hadoop/amazon_reviews_us_Camera_v1_00.tsv /user/hadoop/
